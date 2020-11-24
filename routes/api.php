@@ -31,6 +31,7 @@ Route::group(['prefix' => 'v1/'], function () {
 
     //TASK 2
     Route::post('invest', 'InvestorController@index');
+    Route::get('all-invest', 'InvestorController@investment');
     //verify payment
     Route::get('payment/verify/{reference}', 'InvestorController@verify');
 });
